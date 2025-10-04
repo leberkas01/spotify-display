@@ -89,11 +89,16 @@
     };
   }
 
-  getTokenFromUrl();
-  if (!accessToken) {
-    authorize();
-  } else {
-    fetchCurrentSong();
-    setInterval(fetchCurrentSong, 5000);
+ getTokenFromUrl();
+
+if (!accessToken) {
+  console.log("Kein Token → Weiterleitung zu Spotify");
+  authorize();
+} else {
+  console.log("Token gefunden → Daten abrufen");
+  fetchCurrentSong();
+  setInterval(fetchCurrentSong, 5000);
+}
+
   }
 
