@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #121212;
+  font-family: 'SF Pro Display', 'Inter', sans-serif;
+  background-color: #000;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -12,54 +12,57 @@ body {
 }
 
 #player {
-  width: 350px;
+  width: 100%;
+  max-width: 400px;
   padding: 20px;
-  background: #1e1e1e;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-sizing: border-box;
   text-align: center;
 }
 
 #cover {
   width: 100%;
-  height: 350px;
+  aspect-ratio: 1 / 1;
   background-size: cover;
   background-position: center;
-  border-radius: 12px;
+  border-radius: 20px;
   margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 #info h2 {
-  font-size: 20px;
-  margin: 10px 0 5px;
+  font-size: 22px;
   font-weight: 600;
+  margin: 10px 0 4px;
 }
 
 #info p {
-  font-size: 14px;
-  color: #bbb;
-  margin: 2px 0;
+  font-size: 16px;
+  color: #aaa;
+  margin: 0;
 }
 
 #controls {
-  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 25px 0;
 }
 
 #controls button {
-  font-size: 22px;
-  margin: 0 12px;
-  background: #282828;
+  background-color: #1c1c1e;
   border: none;
   border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  color: #fff;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  color: white;
   cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   transition: background 0.2s;
 }
 
 #controls button:hover {
-  background: #3e3e3e;
+  background-color: #2c2c2e;
 }
 
 #progress {
@@ -86,7 +89,7 @@ body {
 
 #lyrics {
   margin-top: 20px;
-  font-size: 13px;
-  color: #aaa;
+  font-size: 14px;
+  color: #ccc;
   line-height: 1.4;
 }
