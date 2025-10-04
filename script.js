@@ -1,4 +1,4 @@
-window.onload = () => {
+
   // alles hier rein
 
 
@@ -107,5 +107,5 @@ if (!accessToken) {
   fetchCurrentSong();
   setInterval(fetchCurrentSong, 5000);
 }
-};
+
 
