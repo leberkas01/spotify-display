@@ -1,3 +1,7 @@
+window.onload = () => {
+  // alles hier rein
+
+
 const clientId = "2b57d5d5356a4a0e9fdf6ee1af97fc4b";
 const redirectUri = "https://leberkas01.github.io/spotify-display/";
 const scopes = "user-read-playback-state user-modify-playback-state user-read-currently-playing";
@@ -103,5 +107,5 @@ if (!accessToken) {
   fetchCurrentSong();
   setInterval(fetchCurrentSong, 5000);
 }
-
+};
 
