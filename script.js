@@ -99,6 +99,7 @@ if (!accessToken) {
   fetchCurrentSong();
   setInterval(fetchCurrentSong, 5000);
 }
+window.history.replaceState({}, document.title, "/spotify-display/");
 
   }
 
