@@ -104,3 +104,4 @@ if (!accessToken) {
   setInterval(fetchCurrentSong, 5000);
 }
 
+
